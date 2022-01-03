@@ -15,9 +15,9 @@ def projects(request):
 def work(request):
     pass
 
-def education(request)
+def education(request):
+    pass
 
-def 
 
 
 
