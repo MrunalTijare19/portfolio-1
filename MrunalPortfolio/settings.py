@@ -25,6 +25,8 @@ SECRET_KEY = 'django-insecure-w9rtjzsh=($3y-w(z8a&mi+dp-zuu=-o3^d3_6kijofz_wt+#t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS =[]
+
 ALLOWED_HOSTS = ['.vercel.app','.now.sh']
 
 
@@ -74,13 +76,14 @@ WSGI_APPLICATION = 'MrunalPortfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
+DATABASES = {}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -126,11 +129,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Manually added
 
-import os
+
 # STATICFILES_DIRS = [
 #     BASE_DIR / "static"
 # ]
 
+import os
 STATICFILES_DIRS = os.path.join(BASE_DIR / "static"),
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles_build','static')
 
